@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <h1 class="title">Hello World</h1>
+    <button>click</button>
+    <img src="" alt="">
+</body>
+
+<script>
+    let title  = document.querySelector('h1');
+    let btn = document.querySelector('button');
+    //btn.addEventListener('click',function(){
+        //title.classList.add('red')
+    //})
+
+    title.id = 'titleID';
+    title.title= "hello"
+
+    btn.addEventListener('click',function(){
+        document.querySelector('img').src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxtl_Dr_21SUP0P8dG9c_xtywtj0F4fq8S5Q2xqIFfJQPR8nc6';
+    })
+    //title.className = 'mytitle';
+</script>
+</html>

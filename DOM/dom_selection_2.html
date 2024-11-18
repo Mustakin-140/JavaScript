@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Selection 2</title>
+</head>
+<body>
+    <!-- <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ea in </p>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p> -->
+
+    <ul>
+        <li>CSE</li>
+        <li>EEE</li>
+        <li>TE</li>
+        <li>PHARM</li>
+        <li>ARCH</li>
+    </ul>
+    <script>
+        //let para=document.getElementsByClassName('para');
+        //console.log(para);
+       // para[0].style.color = 'red';
+
+       //for(let i=0;i<para.length;i++){
+       // para[i].style.color='green';
+       //}
+
+       //let para = document.querySelectorAll('.para');
+       //console.log(para)
+
+       //let items = document.querySelectorAll('li');
+
+       //items.forEach(el=>{
+        //el.style.color='red';
+        //el.style.fontSize='15px';
+        //el.style.backgroundColor='black'
+       //})
+
+       let listItem = document.querySelector('li:nth-of-type(3)');
+       listItem.style.color = 'red'
+    </script>
+</body>
+</html>

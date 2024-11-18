@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <!-- <div>
+        <h1>Hello World</h1>
+        <p>Hello JS</p>
+    </div> -->
+
+    <ul>
+        <li>CSE</li>
+        <li>EEE</li>
+        <li>TE</li>
+        <li>PHARM</li>
+        <li>ARCH</li>
+    </ul>
+
+    <script>
+        //let div = document.querySelector('div');
+        //let childs = div.children;
+        //childs[1].style.color='red';
+
+        //let title = document.querySelector('h1');
+        //console.log(title.parentElement);
+
+        let item = document.querySelector('li');
+        item.nextElementSibling.nextElementSibling.style.color='red'
+    </script>
+</body>
+</html>

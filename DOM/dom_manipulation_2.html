@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <!-- <h1>Hello World</h1>
+    <button>Click me</button> -->
+
+    <form action="">
+        <label for="name">Name</label>
+        <input type="text" name="" id="name"><br>
+
+        <label for="email">Email</label>
+        <input type="email" name="" id="email"><br>
+        <input type="range" name="" id="" min="10" max="90"><br>
+        <input type="color" name="" id=""><br>
+        <label for="cse">CSE</label>
+        <input type="checkbox" name="" id="CSE"><br>
+        <input type="submit" value="submit">
+        <h1></h1>
+    </form>
+</body>
+<script>
+    let inputs = document.querySelectorAll('input')
+    //let name = inputs[0].value;
+    let form = document.querySelector('form');
+    let submit =document.querySelector('input[type="submit"]');
+    let title = document.querySelector('h1')
+    submit.addEventListener('click',function(e){
+        e.preventDefault();
+        let name = inputs[0].value;
+        title.innerText = name;
+    });
+</script>
+</html>
+
+
+
+<!--  let title = document.querySelector('h1');
+    let btn = document.querySelector('button');
+    btn.addEventListener('click', function(){
+        title.style.color = '#fff';
+        title.style.backgroundColor = 'orange';
+        title.style.padding = '15px';
+    });-->
